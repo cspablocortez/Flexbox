@@ -2,7 +2,6 @@
     --accent-color: #0073ef;
 }
 
-
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.25rem;
@@ -11,7 +10,9 @@ body {
 nav {
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -32,11 +33,16 @@ nav a:visited {
     flex-wrap: wrap;
 }
 
+@media (max-width: 500px) {
+    nav {
+        width: 50%;
+    }
+}
 
 /* Larger than phablet */
 @media (min-width: 750px) {
 
-    nav, .container {
+    .container {
         max-width: 55%;
         font-size: 1.125rem;
         line-height: 1.5;
@@ -47,7 +53,7 @@ nav a:visited {
 /* Larger than desktop */
 @media (min-width: 1024px) {
 
-    nav, .container {
+    .container {
         max-width: 40%;
     }
 }
