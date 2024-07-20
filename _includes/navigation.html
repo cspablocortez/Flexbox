@@ -1,0 +1,19 @@
+<nav>
+    <h1>Flexbox Playground</h1>
+    <p>
+        <a href="index.html">Home</a> 
+        <a href="index.html">About</a> 
+        <a href="index.html">Contact</a>
+    </p>
+</nav>
+
+<nav>
+    <p>
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}">
+        {{ item.name }}
+        </a>
+        {% endfor %}
+    </p>
+    
+</nav>
