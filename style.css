@@ -10,6 +10,8 @@ body {
 
 nav {
     margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -32,10 +34,10 @@ nav a:visited {
 
 
 /* Larger than phablet */
-@media (min-width: 650px) {
+@media (min-width: 750px) {
 
     nav, .container {
-        max-width: 65%;
+        max-width: 55%;
         font-size: 1.125rem;
         line-height: 1.5;
     }
@@ -43,19 +45,9 @@ nav a:visited {
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 
     nav, .container {
-        max-width: 45%;
-        font-size: 1.15rem;
-        line-height: 1.5;
+        max-width: 40%;
     }
-
-    nav {
-        max-width: 100%;
-        display: flex;
-        justify-content: end;
-        /* border: 1px solid black; */
-    }
-
 }
