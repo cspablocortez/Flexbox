@@ -30,8 +30,20 @@ nav a:visited {
     flex-wrap: wrap;
 }
 
+
 /* Larger than phablet */
-@media (min-width: 750px) {
+@media (min-width: 650px) {
+
+    nav, .container {
+        max-width: 65%;
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
 
     nav, .container {
         max-width: 45%;
@@ -43,7 +55,7 @@ nav a:visited {
         max-width: 100%;
         display: flex;
         justify-content: end;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
 }

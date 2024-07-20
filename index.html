@@ -16,7 +16,19 @@
     </nav>
 
     <div class="container">
-        <h1>Home Page</h1>
+
+        <article class="post">
+
+            <header class="post-header">
+              <h1 class="post-title">{{ page.title | escape }}</h1>
+            </header>
+          
+            <div class="post-content">
+              {{ content }}
+            </div>
+          
+          </article>
+
         <p>In any videogame you’ll spot it right away. Equip an object like a grenade or a stone—anything you want to throw at an enemy—and you’ll see the arc: dotted lines reveal the path that the object will take through the air. Pretty much every game uses this visual trick for two reasons; first, because perceiving depth in a three-dimensional game is difficult (this is why Nintendo de-emphasized perfectly timed jumps in Mario 64 onwards and it’s why the two dimensional platformer Super Meat Boy requires near pixel-perfect timing). But second, this throwing-arc is important because, well…</p>
         <p>Great interface design is about seeing the future.</p>
         <p>Let me explain. Not so long ago the throwing arc disappeared in the game I was playing. But I didn’t notice the bug and I didn’t notice the arc missing at all, one day I just found that my accuracy was terrible. I was throwing grenades ten, twenty feet off the mark each time and I kept blaming myself for being lazy or bad. It took me weeks to realize what the problem was and, sure enough, a patch released that fixed the issue and I could suddenly throw things properly again. It wasn’t me—it was the design!</p>
