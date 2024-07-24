@@ -92,6 +92,10 @@ pre.highlight {
 
 /* Elements */
 
+h1 {
+    font-size: 1.75em;
+}
+
 blockquote {
     border-left: 2px solid #8b8b8b;
     padding-left: 1rem;
