@@ -83,7 +83,7 @@ pre.highlight {
     padding: 2px 4px;
 }
 
-.language-console {
+.language-console, .language-html {
     color: white;
 }
 
