@@ -1,14 +1,5 @@
-<!-- <nav>
-    <h1>Flexbox Playground</h1>
-    <p>
-        <a href="index.html">Home</a> 
-        <a href="index.html">About</a> 
-        <a href="index.html">Contact</a>
-    </p>
-</nav> -->
-
 <nav>
-    <h1>Flexbox Playground</h1>
+    <h1>{{ site.title }}</h1>
     <p>
         {% for item in site.data.navigation %}
         <a href="{{ item.link }}">
@@ -16,5 +7,4 @@
         </a>
         {% endfor %}
     </p>
-    
 </nav>
